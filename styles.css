@@ -110,9 +110,3 @@ button:hover {
     background-color: #FFD700; /* Gold color when clicked */
     transition: background-color 0.3s ease;
 }
-
-/* Reset to normal style for new sections */
-.element {
-    background-color: white;
-    transition: background-color 0.3s ease;
-}
