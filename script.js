@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function addToLog(code) {
-        logSection.innerHTML += `${code}<br>`;
+        logSection.innerHTML += `${code} `;
         logSection.scrollTop = logSection.scrollHeight;  // Scroll to the bottom
     }
 
