@@ -12,15 +12,21 @@ h1 {
 
 .table-container {
     display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(9, 100px);
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-        "Ht . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
         ". Ef . Hd . . . . . . . . . ."
         ". . Yn Ha . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . . ."
         /* Continue defining the grid areas based on the image layout */
         ;
 }
