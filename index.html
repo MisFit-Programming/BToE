@@ -3,33 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behavior Trait Logger</title>
+    <title>Behavioral Table of Elements</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Behavior Trait Logger</h1>
-
-    <!-- Table Section -->
+    <h1>Behavioral Table of Elements</h1>
+    
     <div class="table-container">
-        <table id="behavior-table">
-            <!-- Example row; you'll add more rows based on your PDF -->
-            <tr>
-                <td class="clickable" data-code="Bg">Bg</td>
-                <td class="clickable" data-code="No">No</td>
-                <td class="clickable" data-code="Pe">Pe</td>
-                <td class="clickable" data-code="Pt">Pt</td>
-            </tr>
-            <!-- Add rows here similar to the one above to replicate your full table -->
-        </table>
+        <div class="element" data-ref="0">
+            <div class="symbol">Acc</div>
+            <div class="name">Arm Cross</div>
+        </div>
+        <div class="element" data-ref="1">
+            <div class="symbol">Ht</div>
+            <div class="name">Head Tilt</div>
+        </div>
+        <div class="element" data-ref="2">
+            <div class="symbol">Ct</div>
+            <div class="name">Chin Thrust</div>
+        </div>
+        <div class="element" data-ref="3">
+            <div class="symbol">Ga</div>
+            <div class="name">Gestural Absence</div>
+        </div>
+        <div class="element" data-ref="4">
+            <div class="symbol">Ef</div>
+            <div class="name">Eyebrow Flash</div>
+        </div>
+        <div class="element" data-ref="5">
+            <div class="symbol">Hd</div>
+            <div class="name">Head Downcast</div>
+        </div>
+        <div class="element" data-ref="6">
+            <div class="symbol">Lc</div>
+            <div class="name">Lip Compression</div>
+        </div>
+        <div class="element" data-ref="7">
+            <div class="symbol">Ts</div>
+            <div class="name">Teeth Sucking</div>
+        </div>
+        <div class="element" data-ref="8">
+            <div class="symbol">Tu</div>
+            <div class="name">Turtling</div>
+        </div>
+        <div class="element" data-ref="9">
+            <div class="symbol">Om</div>
+            <div class="name">Foreign Object Insertion</div>
+        </div>
+        <!-- Add more elements here by replicating the structure above -->
     </div>
 
-    <!-- Log Section -->
-    <div class="log-section">
-        <h2>Log</h2>
-        <div id="log"></div>
-        <button id="new-section-btn">New Section</button>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
