@@ -15,7 +15,7 @@ h1 {
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(8, 50px);
     grid-template-areas: 
         "Ht . . . . . . . . . . . . . . . Ga Ct"
