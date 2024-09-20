@@ -3,52 +3,41 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
-h1, h2 {
-    text-align: center;
+h1 {
+    margin-bottom: 20px;
 }
 
 .table-container {
-    margin: 20px auto;
-    width: 80%;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    padding: 15px;
-    border: 1px solid #333;
-    cursor: pointer;
-    text-align: center;
-}
-
-td.clickable:hover {
-    background-color: #ddd;
-}
-
-.log-section {
-    margin-top: 30px;
-    text-align: center;
-}
-
-#log {
-    background-color: #fff;
-    border: 1px solid #ccc;
+.element {
+    background-color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 8px;
     padding: 10px;
-    height: 200px;
-    width: 80%;
-    margin: 0 auto;
-    overflow-y: scroll;
-    font-family: monospace;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.2s;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
+.element:hover {
+    transform: scale(1.1);
+    border-color: #555;
+}
+
+.symbol {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 0.9em;
+    color: #555;
 }
