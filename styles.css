@@ -18,8 +18,8 @@ h1 {
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-        "Ht . . . . . . . . . . . . . . . . ."
-        ". Ef . Hd . . . . . . . . . . . . . ."
+        "Ht . . . . . . . . . . . . . . . Ga Ct"
+        "EF HD . . Acc . . . . . . Lc Ts Tu Om Jc Wd Cg"
         ". . Yn Ha . . . . . . . . . . . . . ."
         ". . . . . . . . . . . . . . . . . ."
         ". . . . . . . . . . . . . . . . . ."
