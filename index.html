@@ -7,62 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Behavioral Table of Elements</h1>
-    
+    <h1>The Behavioral Table of Elements</h1>
+
+    <!-- Table Section -->
     <div class="table-container">
-        <div class="element" data-ref="0">
-            <div class="symbol">Acc</div>
-            <div class="name">Arm Cross</div>
-        </div>
-        <div class="element" data-ref="1">
+        <!-- Example cells with grid-area for positioning, following the layout -->
+        <div class="element" style="grid-area: Ht;" data-code="Ht">
             <div class="symbol">Ht</div>
             <div class="name">Head Tilt</div>
+            <div class="details">
+                <div>U</div>
+                <div>Head</div>
+                <div>1.0</div>
+            </div>
         </div>
-        <div class="element" data-ref="2">
-            <div class="symbol">Ct</div>
-            <div class="name">Chin Thrust</div>
-        </div>
-        <div class="element" data-ref="3">
-            <div class="symbol">Ga</div>
-            <div class="name">Gestural Absence</div>
-        </div>
-        <div class="element" data-ref="4">
+        <div class="element" style="grid-area: Ef;" data-code="Ef">
             <div class="symbol">Ef</div>
             <div class="name">Eyebrow Flash</div>
+            <div class="details">
+                <div>U</div>
+                <div>Face</div>
+                <div>1.0</div>
+            </div>
         </div>
-        <div class="element" data-ref="5">
+        <div class="element" style="grid-area: Hd;" data-code="Hd">
             <div class="symbol">Hd</div>
             <div class="name">Head Downcast</div>
+            <div class="details">
+                <div>U</div>
+                <div>Head</div>
+                <div>4.0</div>
+            </div>
         </div>
-        <div class="element" data-ref="6">
-            <div class="symbol">Lc</div>
-            <div class="name">Lip Compression</div>
-        </div>
-        <div class="element" data-ref="7">
-            <div class="symbol">Ts</div>
-            <div class="name">Teeth Sucking</div>
-        </div>
-        <div class="element" data-ref="8">
-            <div class="symbol">Tu</div>
-            <div class="name">Turtling</div>
-        </div>
-        <div class="element" data-ref="9">
-            <div class="symbol">Om</div>
-            <div class="name">Foreign Object Insertion</div>
-        </div>
-        <div class="element" data-ref="10">
-            <div class="symbol">Jc</div>
-            <div class="name">Jaw Clenching</div>
-         </div>
-        <div class="element" data-ref="11">
-            <div class="symbol">Wd</div>
-            <div class="name">Nostril Wing Dilation</div>
-        </div>
+        <!-- Continue adding more cells following the image you provided -->
 
-        <!-- Add more elements here by replicating the structure above -->
+        <!-- Example log section for interactive recording -->
     </div>
-    
-<!-- Log Section -->
+
+    <!-- Log Section -->
     <div class="log-section">
         <h2>Log</h2>
         <div id="log"></div>
