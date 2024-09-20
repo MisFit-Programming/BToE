@@ -16,7 +16,7 @@ h1 {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(17, 1fr);
-    grid-template-rows: repeat(8, 25px);
+    grid-template-rows: repeat(8, 50px);
     grid-template-areas: 
         "Ht . . . . . . . . . . . . . . . Ga Ct"
         "Ef Hd . . Acc . . . . . . Lc Ts Tu Om Jc Wd Cg"
