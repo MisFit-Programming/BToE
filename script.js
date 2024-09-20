@@ -6,13 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     behaviorTable.addEventListener('click', function(event) {
         if (event.target.closest('.element')) {
-            const behaviorCode = event.target.closest('.element').getAttribute('data-code');
+            const clickedElement = event.target.closest('.element');
+            const behaviorCode = clickedElement.getAttribute('data-code');
             addToLog(behaviorCode);
+            changeCellColor(clickedElement);  // Change cell color when clicked
         }
     });
 
     newSectionBtn.addEventListener('click', function() {
         addNewSection();
+        resetCellColors();  // Reset all cell colors when new section is added
     });
 
     copyBtn.addEventListener('click', function() {
@@ -20,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function addToLog(code) {
-        logSection.innerHTML += `${code} `;
+        logSection.innerHTML += `${code}<br>`;
         logSection.scrollTop = logSection.scrollHeight;  // Scroll to the bottom
     }
 
@@ -38,5 +41,18 @@ document.addEventListener('DOMContentLoaded', function() {
         document.execCommand('copy'); // Copy the text to clipboard
         document.body.removeChild(textArea); // Remove the textarea after copying
         alert('Log copied to clipboard!');
+    }
+
+    // Change the background color of clicked cells
+    function changeCellColor(element) {
+        element.classList.add('clicked');
+    }
+
+    // Reset the colors of all cells when starting a new section
+    function resetCellColors() {
+        const allElements = document.querySelectorAll('.element');
+        allElements.forEach(el => {
+            el.classList.remove('clicked');
+        });
     }
 });
