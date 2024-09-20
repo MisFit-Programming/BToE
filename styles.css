@@ -51,12 +51,12 @@ h1 {
 }
 
 .symbol {
-    font-size: 1.5em;
+    font-size: 1.0em;
     font-weight: bold;
 }
 
 .name {
-    font-size: 0.9em;
+    font-size: 0.5em;
     color: #555;
 }
 
