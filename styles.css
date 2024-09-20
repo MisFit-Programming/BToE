@@ -12,7 +12,7 @@ h1 {
 
 .table-container {
     display: grid;
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-columns: 1fr 2fr 3fr 4fr 5fr 6fr 7fr 8fr 9fr 10fr 11fr 12fr 13fr 14fr 15fr 16fr 17fr 18fr;
     grid-template-rows: repeat(8, 100px);
     grid-gap: 10px;
     justify-items: center;
