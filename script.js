@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add a new section separator in the log
     function addNewSection() {
-        logSection.innerHTML += `<br>--- New Section ---<br>`;
+        logSection.innerHTML += `<br>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<br>`;
     }
 
     // Change background color of the clicked element
