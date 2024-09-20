@@ -35,3 +35,11 @@ function getTimeStamp() {
     return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 
+behaviorTable.addEventListener('click', function(event) {
+    if (event.target.classList.contains('clickable')) {
+        // Get the behavior code from the clicked cell
+        const behaviorCode = event.target.getAttribute('data-code');
+        console.log('Clicked on:', behaviorCode); // Add this line
+        addToLog(behaviorCode);
+    }
+});
