@@ -1,35 +1,47 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
     background-color: #f4f4f4;
+    padding: 20px;
     text-align: center;
 }
 
 h1 {
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .table-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 100px);
     grid-gap: 10px;
     justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+        "Ht . . . . . . . . . . . . ."
+        ". Ef . Hd . . . . . . . . . ."
+        ". . Yn Ha . . . . . . . . . ."
+        /* Continue defining the grid areas based on the image layout */
+        ;
 }
 
 .element {
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     border: 2px solid #333;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    width: 120px;
     transition: transform 0.2s;
+    width: 100px;
+    height: 100px;
 }
 
 .element:hover {
     transform: scale(1.1);
-    border-color: #555;
 }
 
 .symbol {
@@ -41,3 +53,17 @@ h1 {
     font-size: 0.9em;
     color: #555;
 }
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.details div {
+    margin: 5px;
+}
+
+/* Example grid areas, continue to define for all other elements */
