@@ -19,8 +19,7 @@ newSectionBtn.addEventListener('click', function() {
 
 // Function to add behavior code to the log
 function addToLog(code) {
-    const timeStamp = getTimeStamp();
-    logSection.innerHTML += `{${timeStamp}} ${code}<br>`;
+    logSection.innerHTML += `${code}<br>`;
     logSection.scrollTop = logSection.scrollHeight;  // Scroll to the bottom
 }
 
@@ -28,18 +27,3 @@ function addToLog(code) {
 function addNewSection() {
     logSection.innerHTML += `<br>--- New Section ---<br>`;
 }
-
-// Generate a timestamp or placeholder
-function getTimeStamp() {
-    const date = new Date();
-    return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-}
-
-behaviorTable.addEventListener('click', function(event) {
-    if (event.target.classList.contains('clickable')) {
-        // Get the behavior code from the clicked cell
-        const behaviorCode = event.target.getAttribute('data-code');
-        console.log('Clicked on:', behaviorCode); // Add this line
-        addToLog(behaviorCode);
-    }
-});
