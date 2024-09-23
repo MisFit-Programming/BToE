@@ -31,6 +31,11 @@ h1 {
         ". . . Hes Psd Rip Spd NA Prn Res Nc Qr Am Pol Oa Mc Exc Chr";
 }
 
+/* Hide empty cells */
+.empty-cell {
+    display: none;
+}
+
 /* Default element style */
 .element {
     display: flex;
