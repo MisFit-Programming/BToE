@@ -94,3 +94,31 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Log copied to clipboard!');
     }
 });
+
+// Notify Discord of page access and log IP address
+async function notifyDiscord() {
+    const webhookUrl = 'https://discord.com/api/webhooks/1304525090964373585/m0Y58Htv0mPKTx7uXE_65ASATJVRJd-PeZyta9dSgCh3khgeTPJW08iq0CHKjp-DOJf8';
+
+    try {
+        // Fetch the user's IP address
+        const ipResponse = await fetch('https://api.ipify.org?format=json');
+        const ipData = await ipResponse.json();
+        const userIp = ipData.ip;
+
+        // Prepare the message with the IP address
+        const message = { content: `A user accessed the BToE! IP Address: ${userIp}` };
+
+        // Send the message to Discord
+        await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(message),
+        });
+        console.log('Discord notification sent with IP:', userIp);
+    } catch (error) {
+        console.error('Error sending Discord notification:', error);
+    }
+}
+
+notifyDiscord();
+
